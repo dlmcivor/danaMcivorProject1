@@ -1,0 +1,106 @@
+footer {
+    background-color: $black;
+    color: $white;
+    margin: 0;
+    .footContact {
+      @include flex(center, center);
+      flex-direction: row;
+      padding: 40px 0;
+      h6 {
+        color: $white;
+        font-size: 0.7rem;
+        // text-align: center;
+        margin: 20px 0;
+      }
+      .contactUsAdd {
+        @include flex(center, flex-start);
+        flex-direction: column;
+        width: calc(100% / 3);
+        address {
+          p {
+            color: $white;
+            font-style: normal;
+            line-height: 14px;
+          }
+        }
+        .footSocial {
+          ul {
+            padding: 30px 0;
+            margin: 0;
+              li {
+                display: inline;
+                a {
+                  color: $white;
+                  font-size: 1.2rem;
+                  padding: 10px
+                }
+              }
+          }
+        }
+      }
+
+      .recentPosts {
+        @include flex(center, center);
+        flex-direction: column;
+        width: calc(100% / 3);
+        ul {
+          list-style-type: disc;
+          padding-bottom: 40px;
+          margin-top: 0;  
+          li {
+            padding: 5px; 
+            a {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .subscribeNow {
+        @include flex(center, flex-end);
+        flex-direction: column;
+        width: calc(100% / 3);
+        padding-bottom: 145px;
+        h6 {
+          padding-bottom: 5px;
+        }
+        p {
+          color: $white;
+          text-align: center;
+          padding-bottom: 18px;
+          margin-top: 0;
+        }
+        form {
+          @include flex(flex-end, center);
+          flex-direction: row;
+          input {
+            font-size: 0.7rem;
+            font-family: $baseFont;
+            padding-left: 10px;
+            border: none;
+            height: 35px;
+          }
+          button {
+            @include flex(center, center);
+            border: none;
+            background-color: $primary;
+            font-size: 1.2rem;
+            height: 35px;
+            width: 40px;
+          }
+        }
+      }
+    }
+}
+
+.footTitle {
+  h6 {
+    color: $white;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,60 @@
+
+.headNavTitle {
+    @include flex(space-evenly, center);
+    flex-direction: row;
+    .headNav1 {
+        .fa-bars {
+            opacity: 0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        width: calc(100% / 3);
+        ul {
+            @include flex(space-evenly, center);
+            flex-direction: row;
+            li {
+                a{
+                    display: inline;
+                    text-align: center;
+                    padding: 0;
+                }
+            }
+        }
+        
+    }
+    h1 {
+        font-size: 1.9rem;
+        width: (100% / 3);
+        text-align: center;
+    }
+    .headNav2 {
+        display: inline;
+        width: (100% / 3);
+        ul {
+            @include flex(space-evenly, center);
+            flex-direction: row;
+            li {
+                a {
+                    padding: 0;
+                    position: relative;
+                    i {
+                        font-size: 0.9rem;
+                    }
+                    span {
+                        background-color: $primary;
+                        font-size: 0.5rem;
+                        border: 1px solid $primary;
+                        padding: 0 4px;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 8px;
+                        top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ADD HOVER FOR NAV LINKS & FIX CIRCLE ON THE SHOPPING BAG

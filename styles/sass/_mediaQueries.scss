@@ -1,0 +1,25 @@
+// major breakpoints: 940px, 768px, 480px
+
+@media (max-width: 768px) {
+    .headNavTitle {
+        .headNav1,
+        .headNav2 {
+            ul {
+                li {
+                    a {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .headNav1 {
+            .fa-bars {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+// Sorry, was unable to finish in time. I spoke with both Safi & Owen about some time restraints I've had for this project for the due date. I will be continuing to finish it.
+
+// FINISH MEDIA QUERIES
