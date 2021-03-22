@@ -12,9 +12,12 @@
                 }
             }
         }
-        .headNav1 {
-            .fa-bars {
-                opacity: 1;
+        .toggle {
+            .barToggle {
+                .fa-bars {
+                    opacity: 1;
+                    position: fixed;
+                }
             }
         }
     }
