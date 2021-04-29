@@ -93,19 +93,16 @@
 .homeListIcons {
   background-image: url(../assets/home-4.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 85vh;
+  height: 90vh;
 }
 
 .hliText {
   @include flex(flex-end, center);
   flex-direction: row;
-  width: 660px;
-  position: relative;
-  top: 100px;
-  left: 50%;
+  width: 100%;
   .col1 {
     @include flex(flex-end, center);
     flex-direction: column;
@@ -158,22 +155,21 @@
   }
 }
 
-.homeListIcons .line {
-  height: 60px; 
-}
-
 // team section
 
-// GREY VERTICAL LINE CENTRE
-
-.meetTeam {
+.titleLine {
+  @include flex(flex-start, center);
+  flex-direction: column;
+  .line {
+    width: 1px;
+    height: 80px; 
+    background-color: $lightBlack;
+    opacity: 0.5;
+  }
   h5 {
-    text-align: center;
-    padding: 60px 0;
+    padding: 50px 0;
   }
 }
-
-// FIX TEAM ALIGNMENT - "4" across on large monitor, but not on laptop screen
 
 .teamContainer {
   @include flex(space-between, center);
@@ -181,7 +177,10 @@
   flex-wrap: wrap;
   padding-bottom: 100px;
   img {
-    padding: 15px;
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
   }
 }
 
@@ -190,9 +189,10 @@
   @include flex(center, flex-start);
   flex-direction: column;
   text-align: left;
-  width: 540px;
-  height: 270px;
+  width: 560px;
+  height: 250px;
   padding: 60px 30px 0px 30px;
+  margin: 20px 0;
   h6 {
     color: $black;
     text-align: left;
@@ -202,8 +202,9 @@
 .contText2 {
   background-color: $whiteTwo;
   @include flex(center, center);
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
+  margin: 20px 0;
   h6 {
     color: $black;
     text-align: center;
@@ -213,13 +214,13 @@
 // portfolio section
 
 .linePortfolio {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  // height: 100vh;
   background-color: $primary;
   .lpContainer {
     @include flex(center, center);
     flex-direction: row;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     .lpText {
       @include flex(center, center);
       flex-direction: column;
@@ -241,14 +242,16 @@
     .lpImg {
       width: 50%;
       img {
-        width: 100%;
-        object-fit: contain;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
       }
     }
   }
 }
-
-// FIX IMAGE SIZE IN CONTAINER
 
 //   *****blog page*****
 
@@ -627,11 +630,12 @@ h4 {
 // contact image
 
 .contactImg {
-  width: 100vw;
-  // img {
-  //   width: 100vw;
-  //   object-fit: cover;
-  // }
+  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
-
-// IMAGE IN CONTAINER
