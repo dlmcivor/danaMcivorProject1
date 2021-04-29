@@ -362,9 +362,12 @@ ul {
 
 .headNavTitle .toggle .navToggle ul li a span {
   background-color: #C3DAB7;
+  height: 20px;
+  width: 20px;
   font-size: 0.5rem;
+  line-height: 0.9rem;
   border: 1px solid #C3DAB7;
-  padding: 0 4px;
+  padding: 0px 0px 10px 6px;
   border-radius: 50%;
   position: absolute;
   left: 8px;
@@ -435,9 +438,12 @@ ul {
 
 .headNavTitle .headNav2 ul li a span {
   background-color: #C3DAB7;
+  height: 20px;
+  width: 20px;
   font-size: 0.5rem;
+  line-height: 0.9rem;
   border: 1px solid #C3DAB7;
-  padding: 0 4px;
+  padding: 0px 0px 10px 6px;
   border-radius: 50%;
   position: absolute;
   left: 8px;
@@ -461,6 +467,16 @@ header i:focus {
   background-position: center;
   width: 100vw;
   height: 100vh;
+}
+
+.headHome .line {
+  width: 1px;
+  height: 120px;
+  background-color: rgba(51, 51, 51, 0.6);
+  opacity: 0.5;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
 }
 
 .homeBrand {
@@ -616,6 +632,10 @@ header i:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  width: 660px;
+  position: relative;
+  top: 100px;
+  left: 50%;
 }
 
 .hliText .col1 {
@@ -661,9 +681,9 @@ header i:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -672,6 +692,7 @@ header i:focus {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 20px 0;
+  width: 330px;
 }
 
 .hliText .ud .faIcon,
@@ -680,10 +701,24 @@ header i:focus {
 .hliText .eReady .faIcon,
 .hliText .advOp .faIcon,
 .hliText .customZ .faIcon {
-  font-size: 0.9rem;
-  border: 2px solid #333333;
+  border: 1px solid #333333;
   border-radius: 50%;
-  padding: 16px;
+  width: 52px;
+  height: 52px;
+  -ms-flex-item-align: start;
+      align-self: start;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hliText .ud .featureText,
@@ -692,8 +727,8 @@ header i:focus {
 .hliText .eReady .featureText,
 .hliText .advOp .featureText,
 .hliText .customZ .featureText {
-  width: 60%;
-  padding: 0 20px;
+  width: 225px;
+  padding: 0;
 }
 
 .hliText .ud .featureText h5,
@@ -719,6 +754,10 @@ header i:focus {
   padding: 0;
   margin: 0;
   color: #999999;
+}
+
+.homeListIcons .line {
+  height: 60px;
 }
 
 .meetTeam h5 {
